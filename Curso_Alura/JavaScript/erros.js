@@ -1,1 +1,2 @@
-console.log(variavel);
+//console.log(variavel);
+console.log('oi');
