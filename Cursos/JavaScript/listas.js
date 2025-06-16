@@ -7,4 +7,3 @@ console.log(sala1);
 
 const sala2 = listaEstudantes.slice(0, listaEstudantes.length/2);
 console.log(sala2);
-
