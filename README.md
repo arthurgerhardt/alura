@@ -1,2 +1,2 @@
 # alura
-cursos da Alura
+Cursos de Programação, computação
