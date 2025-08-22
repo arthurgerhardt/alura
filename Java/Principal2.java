@@ -1,6 +1,4 @@
-package aula02;
-
-public class Principal {
+public class Principal2 {
     public static void main(String[] args) {
         String nome = "João";
         double salario = 2890.0;
@@ -12,6 +10,6 @@ public class Principal {
         }
         else {
             System.out.println("Isento de IRRF");
-        }
+        } 
     }
 }

@@ -1,5 +1,3 @@
-package Alura.Cursos.alura.Java;
-
 public class Livros {
     public static void main(String[] args) {
  
