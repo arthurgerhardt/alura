@@ -14,12 +14,14 @@ public class ExemploRepeticao {
         boolean imprimeOutro = true;
         Scanner leitura = new Scanner(System.in);
 
-        while(imprimeOutro) {
+        do {
             System.out.printf("%s - comissão %.2f\n", vendedores[j], calcularComissao(vendas[j]));
             j++;
             System.out.println("Imprimir outro? (true/false)");
             imprimeOutro = leitura.nextBoolean();
-        }
+        } while(imprimeOutro);
+
+        leitura.close();
     }
 
     public static double calcularComissao(double totalVendas) {
