@@ -11,6 +11,7 @@ public class Desafio {
         System.out.printf("\nSaldo da conta: R$ %.2f", saldo);
         System.out.println("\n*************************************");
 
+        java.util.Scanner scanner = new java.util.Scanner(System.in);
         while (option != 4) {
             System.out.println("\nEscolha uma opção:");
             System.out.println("1 - Depositar");
@@ -18,7 +19,6 @@ public class Desafio {
             System.out.println("3 - Ver saldo");
             System.out.println("4 - Sair");
 
-            java.util.Scanner scanner = new java.util.Scanner(System.in);
             option = scanner.nextInt();
 
             switch (option) {
@@ -51,6 +51,7 @@ public class Desafio {
                 default:
                     System.out.println("Opção inválida. Tente novamente.");
             }
+            scanner.close();
         }
     }
 }
