@@ -1,9 +1,11 @@
+import java.util.Scanner;
+
 public class Desafio {
     public static void main(String[] args) {
         String nome = "Arthur";
         String tipoConta = "Conta Corrente";
         double saldo = 1599.99;
-        int option = 0;
+        int opcao = 0;
         
         System.out.println("**************************************");
         System.out.printf("\nNome do cliente: %s", nome);
@@ -11,47 +13,48 @@ public class Desafio {
         System.out.printf("\nSaldo da conta: R$ %.2f", saldo);
         System.out.println("\n*************************************");
 
-        java.util.Scanner scanner = new java.util.Scanner(System.in);
-        while (option != 4) {
-            System.out.println("\nEscolha uma opção:");
-            System.out.println("1 - Depositar");
-            System.out.println("2 - Sacar");
-            System.out.println("3 - Ver saldo");
-            System.out.println("4 - Sair");
 
-            option = scanner.nextInt();
+        String menu = """
+                ** Digite sua opção **
+                1 - Consultar saldo
+                2 - Transferir valor
+                3 - Receber valor
+                4 - Sair
+                """;
+        Scanner leitura = new Scanner(System.in);
+        
 
-            switch (option) {
+        while (opcao != 4) {
+            System.out.println(menu);
+            opcao = leitura.nextInt();
+            switch (opcao) {
                 case 1:
-                    System.out.print("Digite o valor a ser depositado: R$ ");
-                    double deposito = scanner.nextDouble();
-                    if (deposito > 0) {
-                        saldo += deposito;
-                        System.out.printf("Depósito de R$ %.2f realizado com sucesso!\n", deposito);
-                    } else {
-                        System.out.println("Valor de depósito inválido.");
-                    }
+                    System.out.printf("Seu saldo é de R$ %.2f\n", saldo);
                     break;
                 case 2:
-                    System.out.print("Digite o valor a ser sacado: R$ ");
-                    double saque = scanner.nextDouble();
-                    if (saque > 0 && saque <= saldo) {
-                        saldo -= saque;
-                        System.out.printf("Saque de R$ %.2f realizado com sucesso!\n", saque);
+                    System.out.println("Qual valor deseja transferir?");
+                    double valorTransferencia = leitura.nextDouble();
+                    if (valorTransferencia > saldo) {
+                        System.out.println("Saldo insuficiente para a transferência.");
                     } else {
-                        System.out.println("Valor de saque inválido ou saldo insuficiente.");
+                        saldo -= valorTransferencia;
+                        System.out.printf("Transferência de R$ %.2f realizada com sucesso.\n", valorTransferencia);
                     }
                     break;
                 case 3:
-                    System.out.printf("Saldo atual: R$ %.2f\n", saldo);
+                    System.out.println("Qual valor deseja receber?");
+                    double valorRecebido = leitura.nextDouble();
+                    saldo += valorRecebido;
+                    System.out.printf("Valor de R$ %.2f recebido com sucesso.\n", valorRecebido);
                     break;
                 case 4:
-                    System.out.println("Saindo...");
+                    System.out.println("Saindo... Obrigado por usar nosso sistema.");
                     break;
                 default:
                     System.out.println("Opção inválida. Tente novamente.");
             }
-            scanner.close();
+            System.out.println("*************************************");
         }
+        leitura.close();
     }
 }
