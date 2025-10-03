@@ -1,2 +1,2 @@
 # alura
-Cursos de Programação, computação
+Cursos de Programação, computação, design, jogos eletrônicos
