@@ -49,3 +49,13 @@ a {
     text-decoration: none;
     color: black;
 }
+
+a:hover {
+    color: rgb(97, 137, 18);
+
+}
+
+.btn:hover {
+    background-color: rgb(18, 34, 137);
+    color: white;
+}
