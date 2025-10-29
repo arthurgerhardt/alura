@@ -1,1 +1,17 @@
+# Arquivos do macOS
 .DS_Store
+
+# Ambientes virtuais Python
+.venv/
+venv/
+
+# Pastas de cache
+__pycache__/
+*.py[cod]
+
+# Configurações do VSCode
+.vscode/
+
+# Arquivos temporários
+*.log
+*.tmp
