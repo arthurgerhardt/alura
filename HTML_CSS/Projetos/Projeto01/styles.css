@@ -67,14 +67,25 @@ p {
     margin-bottom: 20px;
 }
 
-img {
-    position: absolute;
-    top: 0;
-    right: 0; /* ou right: 20px */
+/* evita sobreposição usando float e margem */
+.intro img {
+    float: right;
     width: 150px;
+    max-width: 30%;
     height: auto;
     border-radius: 50%;
     border: 2px solid rgb(7, 189, 235);
+    margin: 0 0 10px 20px;
+}
+
+/* em telas pequenas a imagem fica centralizada e acima/abaixo do texto */
+@media (max-width: 600px) {
+    .intro img {
+        float: none;
+        display: block;
+        margin: 20px auto;
+        max-width: 40%;
+    }
 }
 
 footer {
@@ -96,4 +107,8 @@ footer {
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
+}
+
+.btn:hover {
+    background-color: chartreuse;
 }
