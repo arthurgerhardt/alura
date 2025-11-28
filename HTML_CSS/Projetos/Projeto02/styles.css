@@ -14,7 +14,7 @@ body {
 
 header {
     margin-bottom: 30px;
-    background-color: #1a2740; /* cor diferente do main */
+    background-color: #000000; /* cor diferente do main */
     padding: 18px;
     border-radius: 8px;
 }
@@ -94,15 +94,10 @@ p {
     margin-bottom: 20px;
 }
 
-/* evita sobreposição usando float e margem */
-.intro img {
-    float: right;
-    width: 150px;
-    max-width: 30%;
-    height: auto;
-    border-radius: 50%;
-    border: 2px solid rgb(7, 189, 235);
-    margin: 0 0 10px 20px;
+img {
+    max-width: 40%;
+    position: relative;
+    object-position: right top;
 }
 
 /* em telas pequenas a imagem fica centralizada e acima/abaixo do texto */
@@ -116,10 +111,11 @@ p {
 }
 
 footer {
-    margin-top: 60px;
+    margin-top: 90px;
     text-align: center;
     font-size: 14px;
-    color: #888;
+    color: #020202;
+    background-color: #07adf4;
 }
 
 .btn {
