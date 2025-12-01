@@ -1,0 +1,51 @@
+/* home.css */
+.apresentacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1120px;
+  margin: auto;
+  padding: 64px 24px;
+}
+.apresentacao_conteudo_titulo {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.apresentacao_conteudo_texto {
+  font-size: 18px;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+.apresentacao_links h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.apresentacao_links a {
+  margin-right: 16px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+.apresentacao_links a:hover {
+  transform: scale(1.05);
+}
+.apresentacao_imagem {
+  border: 1px solid var(--border);
+  box-shadow: 0 30px 60px -24px rgba(0,0,0,0.6);
+  filter: grayscale(100%);
+  border-radius: var(--radius);
+}
+
+/* Responsivo */
+@media (max-width: 960px) {
+  .apresentacao {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .apresentacao_links a {
+    margin-bottom: 12px;
+  }
+}

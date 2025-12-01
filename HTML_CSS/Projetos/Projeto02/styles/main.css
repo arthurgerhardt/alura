@@ -1,0 +1,95 @@
+/* main.css */
+.apresentacao__conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 600px;
+}
+
+.apresentacao__conteudo__titulo {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--text);
+}
+
+ strong {
+  color: aqua;
+  display: inline;
+}
+
+.apresentacao__conteudo__texto {
+  font-size: 1.125rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.apresentacao__imagem {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: 0 30px 60px -24px rgba(0, 0, 0, 0.6);
+    filter: grayscale(100%);
+    object-fit: cover;
+}
+
+.apresentacao__links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.apresentacao__links h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.apresentacao__links__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  color: var(--text);
+  background-color: transparent;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.apresentacao__links__link:hover {
+  transform: scale(1.05);
+  background-color: var(--primary-20);
+}
+
+/* Layout geral da seção */
+.apresentacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1120px;
+  margin: auto;
+  padding: 64px 24px;
+}
+
+/* Responsivo */
+@media (max-width: 960px) {
+  .apresentacao {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .apresentacao__conteudo {
+    align-items: center;
+  }
+
+  .apresentacao__links__link {
+    width: 100%;
+  }
+}

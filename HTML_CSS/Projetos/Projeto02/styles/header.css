@@ -1,0 +1,32 @@
+/* header.css */
+header {
+  background-color: var(--bg);
+  color: aqua;
+  padding: 10px 14px;
+}
+.main-nav {
+  display: flex;
+  justify-content: left;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+strong {
+    color: aqua;
+    display: inline;
+}
+.menu li a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.menu li a:hover {
+  background-color: #343333;
+  color: var(--text);
+}
