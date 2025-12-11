@@ -1,3 +1,14 @@
+header {
+  background-color: var(--header-bg);
+  padding: 16px 24px;
+  
+  box-shadow: var(--bg-footer) 0px 4px 12px -4px;
+}
+
+header strong {
+  color: var(--primary);
+}
+
 /* about.css */
 .sobre {
   display: grid;
@@ -29,11 +40,13 @@
 }
 
 .sobre__imagem img {
-  width: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
   border-radius: var(--radius);
-  border: 1px solid var(--border);
-  box-shadow: 0 30px 60px -24px rgba(0,0,0,0.6);
-  filter: grayscale(100%);
+  box-sizing: border-box;
+  border: solid #000000 0.1px;
+  padding: 5px;
 }
 
 /* Responsivo */
