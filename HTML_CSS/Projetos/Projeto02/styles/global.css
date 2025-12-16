@@ -19,23 +19,11 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  box-sizing: border-box;
   background-color: var(--bg);
   color: var(--text);
-  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
 }
 
-main {
-  padding: 40px 24px;
-}
-
-img {
-  width: 65%;
-  display: flex;
-  flex-direction: row;
-  border-radius: var(--radius);
-  box-sizing: border-box;
-  border: solid #000000 0.1px;
-  padding: 5px;
-}

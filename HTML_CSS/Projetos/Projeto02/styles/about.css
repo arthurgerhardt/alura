@@ -1,6 +1,7 @@
 header {
   background-color: var(--header-bg);
   padding: 16px 24px;
+  color: aquamarine;
   
   box-shadow: var(--bg-footer) 0px 4px 12px -4px;
 }
