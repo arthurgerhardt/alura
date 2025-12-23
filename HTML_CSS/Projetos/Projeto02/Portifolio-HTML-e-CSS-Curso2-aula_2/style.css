@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+.titulo-destaque{
+    color: #22D4FD;
+}
+.apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10%;
+}
+
+.btn
+{
+    background-color: #22D4FD;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    max-width: fit-content;
+}
