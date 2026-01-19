@@ -52,27 +52,23 @@ body{
 .btn{
     font-family: 'Krone', sans-serif;
     font-size: 1.2rem;
-    color: #F6F6F6;
+    font-weight: 600;
+    color: #070707;
+    width: 280px;
+    text-align: center;
     text-decoration: none;
+    background-color: #22D4FD;
+    padding: 21.5px 0;
+    font-size: 24px;
+    margin: 5px;
     border: 2px solid #22D4FD;
-    padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 16px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .btn:hover {
-    background-color: #05631b;
-    color: #000000;
+    border: 2px solid #0329ff;
+    background-color: #0329ff;
+    color: #ffffff;
 }
 
-.btn img{
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-    vertical-align: middle;
-}
-
-img{
-    max-width: 300px;
-    border-radius: 30%;
-}
